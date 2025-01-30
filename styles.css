@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #020202;
+    font-family: Calibri, sans-serif;
+    text-align: center; /* Center everything */
+}
+
+/* Style for the header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    background-color: rgb(242, 242, 242);
+    padding: 20px 78px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+    height: 49px;
+}
+
+/* Style for header images and text */
+.logias {
+    display: flex;
+    align-items: center;
+}
+
+.logios {
+    display: flex;
+    align-items: center;
+}
+
+h1,
+.logo,
+.logos {
+    opacity: 0;
+}
+
+/* Header text styling */
+h1 {
+    margin: 0;
+    font-size: 27px;
+    color: black;
+    animation: slideInFromLeft 1s forwards;
+    animation-delay: 0.5s;
+}
+
+.logo {
+    width: 68px;
+    height: auto;
+    margin-right: 15px;
+    margin-top: -13px;
+    margin-bottom: -13px;
+    animation: slideInFromLeft 1s forwards;
+    animation-delay: 0.5s;
+}
+
+.logos {
+    width: 68px;
+    height: auto;
+    margin-right: 10px;
+    margin-top: -13px;
+    margin-bottom: -13px;
+    animation: slideInFromRight 1s forwards;
+    opacity: 0;
+}
+
+/* Center text in popup */
+.popup p {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Table styling */
+.second-table {
+    width: 1300px; /* Table width */
+    margin: 30px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table-header {
+    background-color: lightblue; /* Light blue header */
+    font-weight: bold;
+    font-size: 25px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Add some background to the table rows */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}
+
+/* Animation for sliding in from the left */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Animation for sliding in from the right */
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
